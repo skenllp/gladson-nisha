@@ -313,7 +313,7 @@
 
     .cover-name .n {
       font-family: 'Mrs Saint Delafield', cursive;
-      font-size: 40px;
+      font-size: clamp(38px, 8vw, 56px);
       color: var(--rosewood);
       line-height: 1;
     }
@@ -546,9 +546,10 @@
     }
 
     .couple-col .name {
-      font-family: 'Playfair Display', serif;
-      font-size: 30px;
+      font-family: 'Mrs Saint Delafield', cursive;
+      font-size: 44px;
       color: var(--rosewood);
+      line-height: 1.1;
     }
 
     .couple-col .parents {
@@ -626,8 +627,12 @@
     }
 
     .card-row .ic {
-      font-size: 17px;
-      margin-top: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--rosewood-soft);
+      margin-top: 3px;
+      flex-shrink: 0;
     }
 
     .card-row .t1 {
@@ -931,25 +936,7 @@
 
     <div class="cover-center" id="tapToOpen">
       <div class="seal">
-        <!-- Monogram initials for cover seal -->
-        <svg class="monogram-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
-          style="width:68px;height:68px;">
-          <defs>
-            <linearGradient id="coverGold" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#DCC07E" />
-              <stop offset="50%" stop-color="#C39A3E" />
-              <stop offset="100%" stop-color="#8C6A21" />
-            </linearGradient>
-          </defs>
-          <circle cx="50" cy="50" r="42" stroke="url(#coverGold)" stroke-width="1.2" stroke-dasharray="3 3"
-            opacity="0.85" />
-          <g fill="url(#coverGold)">
-            <path d="M 31,24.5 H 36.5 V 27.5 H 33.5 C 24,27.5 17.5,35 17.5,47.5 C 17.5,59.5 24,67.5 34,67.5 C 37.5,67.5 40.5,66.2 43,64.2 V 50.5 H 39.5 V 47.5 H 46.5 V 63.2 C 42.8,66.2 38.5,68 34,68 C 22.5,68 15,59 15,47.5 C 15,34.5 23.5,24.5 35.5,24.5 H 31 Z"/>
-            <path d="M 21,34.5 C 27.5,29 36.5,25.5 48.5,26.5 C 58,27.3 64.5,34 72.5,46.5 L 80.5,59 C 85,65.5 90,69 96.5,67.5 C 90.5,70.8 82.5,70.5 76.5,65 L 68.5,52.5 C 61.5,41.5 55.5,30 46,29 C 37.5,28 30,31.5 21,34.5 Z"/>
-            <path d="M 45,34.5 H 51.5 V 37 H 49.5 V 64.5 H 51.5 V 67 H 45 V 64.5 H 47 V 37 H 45 Z"/>
-            <path d="M 67.5,34.5 H 74 V 37 H 72 V 64.5 H 74 V 67 H 67.5 V 64.5 H 69.5 V 37 H 67.5 Z"/>
-          </g>
-        </svg>
+        <img src="gn.png" alt="GN Monogram" style="width:68px; height:68px; object-fit:contain;">
       </div>
       <div class="tap-label">Tap to open</div>
     </div>
@@ -1055,13 +1042,13 @@
         <div class="card">
           <div class="tag">Holy Matrimony</div>
           <h3>Wedding</h3>
-          <div class="card-row"><span class="ic">📅</span>
+          <div class="card-row"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
             <div>
               <div class="t1">13th October 2026 — Tuesday</div>
               <div class="t2">10:00 AM</div>
             </div>
           </div>
-          <div class="card-row"><span class="ic">📍</span>
+          <div class="card-row"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
             <div>
               <div class="t1">Chalikapotty TPM Church</div>
               <div class="t2">Chalikkalpotty, Malappuram</div>
@@ -1072,13 +1059,13 @@
         <div class="card">
           <div class="tag">Join Us After</div>
           <h3>Reception</h3>
-          <div class="card-row"><span class="ic">📅</span>
+          <div class="card-row"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
             <div>
               <div class="t1">17th October 2026 — Saturday</div>
               <div class="t2">Following the wedding</div>
             </div>
           </div>
-          <div class="card-row"><span class="ic">📍</span>
+          <div class="card-row"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
             <div>
               <div class="t1">Levante Convention Centre</div>
               <div class="t2">Moothedam, Kuttikkad</div>
@@ -1103,32 +1090,18 @@
           <img src="map.png" alt="Map to Chalikapotty TPM Church">
         </a>
         <a class="venue-btn" href="https://www.google.com/maps/search/?api=1&query=TPM+Pentecost+Church+Chalikkalpotty"
-          target="_blank" rel="noopener">📍 Open Location</a>
+          target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Open Location
+        </a>
       </div>
     </section>
 
 
     <!-- CLOSING -->
     <section class="closing">
-      <!-- Monogram initials for closing section -->
-      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
-        style="width:68px;height:68px;margin-bottom:12px;">
-        <defs>
-          <linearGradient id="closingGold" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#f0d878" />
-            <stop offset="50%" stop-color="#DCC07E" />
-            <stop offset="100%" stop-color="#b89040" />
-          </linearGradient>
-        </defs>
-        <circle cx="50" cy="50" r="42" stroke="url(#closingGold)" stroke-width="1.2" stroke-dasharray="3 3"
-          opacity="0.85" />
-        <g fill="url(#closingGold)">
-          <path d="M 31,24.5 H 36.5 V 27.5 H 33.5 C 24,27.5 17.5,35 17.5,47.5 C 17.5,59.5 24,67.5 34,67.5 C 37.5,67.5 40.5,66.2 43,64.2 V 50.5 H 39.5 V 47.5 H 46.5 V 63.2 C 42.8,66.2 38.5,68 34,68 C 22.5,68 15,59 15,47.5 C 15,34.5 23.5,24.5 35.5,24.5 H 31 Z"/>
-          <path d="M 21,34.5 C 27.5,29 36.5,25.5 48.5,26.5 C 58,27.3 64.5,34 72.5,46.5 L 80.5,59 C 85,65.5 90,69 96.5,67.5 C 90.5,70.8 82.5,70.5 76.5,65 L 68.5,52.5 C 61.5,41.5 55.5,30 46,29 C 37.5,28 30,31.5 21,34.5 Z"/>
-          <path d="M 45,34.5 H 51.5 V 37 H 49.5 V 64.5 H 51.5 V 67 H 45 V 64.5 H 47 V 37 H 45 Z"/>
-          <path d="M 67.5,34.5 H 74 V 37 H 72 V 64.5 H 74 V 67 H 67.5 V 64.5 H 69.5 V 37 H 67.5 Z"/>
-        </g>
-      </svg>
+      <!-- Monogram image for closing section -->
+      <!-- <img src="gn.png" alt="GN Monogram" style="width:68px; height:68px; object-fit:contain; margin-bottom:12px;"> -->
       <div class="names">Gladson &amp; Nisha</div> 
       <p class="msg">With Love &amp; Prayers,<br>we look forward to celebrating with you.</p>
     </section>
